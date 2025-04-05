@@ -3,7 +3,7 @@
 <!-- ![Portfolio Preview](./screenshot_1.jpeg) -->
 
 ## 🚀 About the Project
-This is my personal portfolio website built using **React, Vite, and Tailwind CSS**. It showcases my skills, projects, and experiences in an interactive and modern UI.
+The Navy Academy Project is a dynamic and responsive web application developed using the **React and Tailwind**. Designed to manage and streamline operations for a naval educational institution, the platform provides an intuitive interface for students, instructors, and administrative staff to interact with the academy's digital infrastructure.
 
 ## 🛠️ Tech Stack
 - **Frontend:** React, Vite, Tailwind CSS
