@@ -13,8 +13,7 @@ The Navy Academy Project is a dynamic and responsive web application developed u
 ## ✨ Features
 - Responsive design with Tailwind CSS
 - Smooth animations and transitions
-- Dynamic project showcase
-- Contact form with email integration
+- Dynamic achievement showcase
 
 ## 📦 Installation & Setup
 To run this project locally, follow these steps:
