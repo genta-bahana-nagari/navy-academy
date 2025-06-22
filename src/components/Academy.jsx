@@ -1,38 +1,37 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 
 const trainings = [
   {
-    image: "Basic Naval Training",
+    image: "🚢",
     title: "Basic Naval Training",
     description:
-      "Introductory bootcamp for physical, mental, and strategic preparedness.",
+      "A rigorous bootcamp focusing on physical fitness, mental resilience, seamanship, and naval traditions. Cadets master the fundamentals of discipline, teamwork, and maritime safety.",
   },
   {
-    image: "Basic Naval Training",
+    image: "⚓",
     title: "Advanced Combat Operations",
     description:
-      "Hands-on experience with tactical warfare, surveillance, and defense systems.",
+      "Intensive hands-on training in tactical warfare, surveillance, and modern defense systems. Cadets learn to operate advanced weaponry, coordinate missions, and respond to real-world scenarios.",
   },
   {
-    image: "Basic Naval Training",
+    image: "🌊",
     title: "Submarine Navigation",
     description:
-      "Deepwater vessel operation, stealth strategy, and sonar-based coordination.",
+      "Specialized instruction in deepwater vessel operation, stealth maneuvers, sonar navigation, and underwater communication. Prepares cadets for the unique challenges of submarine service.",
   },
   {
-    image: "Basic Naval Training",
+    image: "🪖",
     title: "Leadership & Command",
     description:
-      "Designed for future officers to hone leadership and mission management skills.",
+      "Designed for aspiring officers, this program hones leadership, strategic planning, and mission management skills. Cadets engage in simulations and real-life exercises to develop decision-making under pressure.",
   },
 ];
 
 const Academy = () => {
   return (
     <div
-      className="w-full px-6 py-16 md:px-20 lg:px-32 bg-gray-100 text-gray-800"
-      id="Academy"
+      className="scroll-mt-24 w-full px-6 py-20 md:px-24 lg:px-40 bg-gradient-to-br from-blue-50 via-white to-blue-100 text-gray-900"
+      id="academy"
     >
       <motion.div
         className="text-center mb-10"
@@ -41,34 +40,31 @@ const Academy = () => {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-3xl md:text-4xl font-bold mb-2">
-          Academy{" "}
-          <span className="underline underline-offset-4 decoration-blue-500">
-            Program
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-4 tracking-tight">
+          Navy Academy{" "}
+          <span className="underline underline-offset-8 decoration-4 decoration-blue-500">
+            Programs
           </span>
         </h2>
-        <p className="max-w-2xl mx-auto text-gray-600 mt-2">
-          Building future leaders of naval strength through discipline,
-          excellence, and innovation.
+        <p className="max-w-2xl mx-auto text-gray-700 mt-4 text-lg">
+          Shaping tomorrow’s naval leaders through world-class training, discipline, and innovation. Our academy empowers cadets with the skills, knowledge, and values essential for excellence at sea and beyond.
         </p>
       </motion.div>
-      <div className="grid md:grid-cols-2 gap-8">
+      <div className="grid md:grid-cols-2 gap-10">
         {trainings.map((item, index) => (
           <motion.div
             key={index}
-            className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300"
+            className="bg-white rounded-2xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border border-blue-100"
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: index * 0.15 }}
             viewport={{ once: true }}
           >
-            <div className="text-xl font-semibold text-blue-600 mb-2">
-              {item.image}
+            <div className="flex items-center mb-4">
+              <span className="text-4xl mr-3">{item.image}</span>
+              <h3 className="text-2xl font-bold text-blue-700">{item.title}</h3>
             </div>
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">
-              {item.title}
-            </h3>
-            <p className="text-gray-600 text-sm">{item.description}</p>
+            <p className="text-gray-700 text-base leading-relaxed">{item.description}</p>
           </motion.div>
         ))}
       </div>

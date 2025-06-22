@@ -1,6 +1,6 @@
 import './App.css'
 import Navbar from "./components/NavBar";
-import Header from './components/Header'
+import Hero from './components/Hero'
 import About from './components/About'
 import Academy from './components/Academy';
 
@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="w-full overflow-hidden">
       <Navbar />
-      <Header />
+      <Hero />
       <About />
       <Academy />
     </div>
