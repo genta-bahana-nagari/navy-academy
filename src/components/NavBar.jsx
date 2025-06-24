@@ -40,7 +40,9 @@ const NavBar = () => {
         <img
           src="/brand-logo.png"
           alt="Logo"
-          className="h-12 sm:h-14 drop-shadow-lg select-none"
+          href="#home"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          className="h-12 sm:h-14 drop-shadow-lg select-none cursor-pointer"
           draggable={false}
         />
 

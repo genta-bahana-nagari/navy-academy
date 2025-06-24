@@ -11,9 +11,7 @@ const About = () => {
   ];
 
   const descriptions = [
-    "Since its establishment, the US Navy has played a vital role in maintaining national and global security.",
-    "Our forces are trained, equipped, and ready for both peace and conflict.",
-    "Through strong collaboration and cutting-edge innovation, we ensure unmatched readiness and excellence at sea.",
+    "Since its establishment, the US Navy has played a vital role in maintaining national and global security. Our forces are trained, equipped, and ready for both peace and conflict. Through strong collaboration and cutting-edge innovation, we ensure unmatched readiness and excellence at sea.",
   ];
 
   return (
@@ -70,7 +68,7 @@ const About = () => {
           </div>
 
           {/* Descriptions */}
-          <div className="space-y-4 text-center md:text-left text-base text-gray-700 leading-relaxed mb-8">
+          <div className="space-y-4 text-justify md:text-justify text-base text-gray-700 leading-relaxed mb-8">
             {descriptions.map((desc, idx) => (
               <p key={idx}>{desc}</p>
             ))}

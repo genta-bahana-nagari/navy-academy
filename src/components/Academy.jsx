@@ -1,26 +1,26 @@
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 const trainings = [
   {
-    image: "🚢",
+    image: "./card-assets/bootcamp.jpeg",
     title: "Basic Naval Training",
     description:
       "A rigorous bootcamp focusing on physical fitness, mental resilience, seamanship, and naval traditions. Cadets master the fundamentals of discipline, teamwork, and maritime safety.",
   },
   {
-    image: "⚓",
+    image: "./card-assets/combat.jpg",
     title: "Advanced Combat Operations",
     description:
       "Intensive hands-on training in tactical warfare, surveillance, and modern defense systems. Cadets learn to operate advanced weaponry, coordinate missions, and respond to real-world scenarios.",
   },
   {
-    image: "🌊",
+    image: "./card-assets/submarine.jpeg",
     title: "Submarine Navigation",
     description:
       "Specialized instruction in deepwater vessel operation, stealth maneuvers, sonar navigation, and underwater communication. Prepares cadets for the unique challenges of submarine service.",
   },
   {
-    image: "🪖",
+    image: "./card-assets/leadership.jpg",
     title: "Leadership & Command",
     description:
       "Designed for aspiring officers, this program hones leadership, strategic planning, and mission management skills. Cadets engage in simulations and real-life exercises to develop decision-making under pressure.",
@@ -47,7 +47,10 @@ const Academy = () => {
           </span>
         </h2>
         <p className="max-w-2xl mx-auto text-gray-700 mt-4 text-lg">
-          Shaping tomorrow’s naval leaders through world-class training, discipline, and innovation. Our academy empowers cadets with the skills, knowledge, and values essential for excellence at sea and beyond.
+          Shaping tomorrow’s naval leaders through world-class training,
+          discipline, and innovation. Our academy empowers cadets with the
+          skills, knowledge, and values essential for excellence at sea and
+          beyond.
         </p>
       </motion.div>
       <div className="grid md:grid-cols-2 gap-10">
@@ -60,16 +63,21 @@ const Academy = () => {
             transition={{ duration: 0.6, delay: index * 0.15 }}
             viewport={{ once: true }}
           >
-            <div className="flex items-center mb-4">
-              <span className="text-4xl mr-3">{item.image}</span>
-              <h3 className="text-2xl font-bold text-blue-700">{item.title}</h3>
+            <div className="flex items-center mb-3 h-[180px]">
+              <img
+                src={item.image}
+                className="w-full h-full object-cover rounded-md"
+              />
             </div>
-            <p className="text-gray-700 text-base leading-relaxed">{item.description}</p>
+            <h3 className="text-2xl font-bold text-blue-700">{item.title}</h3>
+            <p className="text-gray-700 text-base leading-relaxed">
+              {item.description}
+            </p>
           </motion.div>
         ))}
       </div>
     </div>
   );
-}
+};
 
-export default Academy
+export default Academy;
