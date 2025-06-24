@@ -20,8 +20,8 @@ To run this project locally, follow these steps:
 
 1. **Clone the repository:**
    ```sh
-   git clone https://github.com/genta-bahana-nagari/react_navy_project.git
-   cd react_navy_project # or other directories
+   git clone https://github.com/genta-bahana-nagari/navy-academy.git
+   cd navy-academy
    ```
 2. **Install dependencies:**
    ```sh
