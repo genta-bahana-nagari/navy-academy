@@ -3,6 +3,8 @@ import Navbar from "./components/NavBar";
 import Hero from './components/Hero'
 import About from './components/About'
 import Academy from './components/Academy';
+import Contact from './components/Contact';
+import CTA from './components/CTA';
 
 function App() {
   return (
@@ -11,6 +13,8 @@ function App() {
       <Hero />
       <About />
       <Academy />
+      <CTA />
+      <Contact />
     </div>
   )
 }
